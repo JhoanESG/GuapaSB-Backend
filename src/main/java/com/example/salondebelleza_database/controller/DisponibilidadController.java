@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/disponibilidad")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://http://guapa-mysql-server.mysql.database.azure.com")
 
 public class DisponibilidadController {
     @Autowired

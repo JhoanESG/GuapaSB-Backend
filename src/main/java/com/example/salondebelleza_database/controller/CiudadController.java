@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/ciudades")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://http://guapa-mysql-server.mysql.database.azure.com")
 public class CiudadController {
 
     private final CiudadService ciudadService;

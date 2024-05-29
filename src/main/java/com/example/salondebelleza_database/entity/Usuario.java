@@ -2,17 +2,19 @@ package com.example.salondebelleza_database.entity;
 
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.management.ConstructorParameters;
 import java.io.Serializable;
 @Entity
 @Inheritance(strategy= InheritanceType.TABLE_PER_CLASS )
 @Getter
 @Setter
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-
+@AllArgsConstructor
 public class Usuario implements Serializable {
     @Id
     @EqualsAndHashCode.Include
@@ -29,4 +31,6 @@ public class Usuario implements Serializable {
     @Column(name = "tipo_usuario", length = 10, nullable = false)
     private Tipo_usuario tipo_usuario;
 
+    public Usuario() {
+    }
 }

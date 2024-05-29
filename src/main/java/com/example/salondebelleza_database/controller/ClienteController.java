@@ -24,7 +24,7 @@ import static java.lang.Integer.parseInt;
 
 @RestController
 @RequestMapping("/clientes")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://http://guapa-mysql-server.mysql.database.azure.com")
 public class ClienteController {
 
     private final ClienteService clienteService;

@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/pagos-productos")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://http://guapa-mysql-server.mysql.database.azure.com")
 public class PagoProductoController {
 
     @Autowired
